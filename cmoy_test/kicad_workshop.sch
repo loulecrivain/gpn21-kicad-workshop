@@ -1,0 +1,325 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_SPST SW101
+U 1 1 5C719504
+P 2100 1200
+F 0 "SW101" H 2100 1435 50  0000 C CNN
+F 1 "SW_SPST" H 2100 1344 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_CuK_JS202011CQN_DPDT_Straight" H 2100 1200 50  0001 C CNN
+F 3 "" H 2100 1200 50  0001 C CNN
+	1    2100 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R101
+U 1 1 5C71961F
+P 2450 1400
+F 0 "R101" H 2509 1446 50  0000 L CNN
+F 1 "R_Small" H 2509 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2450 1400 50  0001 C CNN
+F 3 "~" H 2450 1400 50  0001 C CNN
+	1    2450 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D101
+U 1 1 5C7196FA
+P 2450 1700
+F 0 "D101" V 2488 1583 50  0000 R CNN
+F 1 "LED" V 2397 1583 50  0000 R CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2450 1700 50  0001 C CNN
+F 3 "~" H 2450 1700 50  0001 C CNN
+	1    2450 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R102
+U 1 1 5C7197A1
+P 2900 1400
+F 0 "R102" H 2959 1446 50  0000 L CNN
+F 1 "R_Small" H 2959 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 1400 50  0001 C CNN
+F 3 "~" H 2900 1400 50  0001 C CNN
+	1    2900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R103
+U 1 1 5C7197D9
+P 2900 1700
+F 0 "R103" H 2959 1746 50  0000 L CNN
+F 1 "R_Small" H 2959 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2900 1700 50  0001 C CNN
+F 3 "~" H 2900 1700 50  0001 C CNN
+	1    2900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C101
+U 1 1 5C7198F5
+P 3400 1400
+F 0 "C101" H 3491 1446 50  0000 L CNN
+F 1 "CP1_Small" H 3491 1355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3400 1400 50  0001 C CNN
+F 3 "~" H 3400 1400 50  0001 C CNN
+	1    3400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C102
+U 1 1 5C719939
+P 3400 1700
+F 0 "C102" H 3491 1746 50  0000 L CNN
+F 1 "CP1_Small" H 3491 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3400 1700 50  0001 C CNN
+F 3 "~" H 3400 1700 50  0001 C CNN
+	1    3400 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0103
+U 1 1 5C719A5A
+P 4000 1550
+F 0 "#PWR0103" H 4000 1300 50  0001 C CNN
+F 1 "Earth" H 4000 1400 50  0001 C CNN
+F 2 "" H 4000 1550 50  0001 C CNN
+F 3 "~" H 4000 1550 50  0001 C CNN
+	1    4000 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0102
+U 1 1 5C719B12
+P 4000 1200
+F 0 "#PWR0102" H 4000 1050 50  0001 C CNN
+F 1 "+9V" H 4015 1373 50  0000 C CNN
+F 2 "" H 4000 1200 50  0001 C CNN
+F 3 "" H 4000 1200 50  0001 C CNN
+	1    4000 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9V #PWR0104
+U 1 1 5C719B7D
+P 4000 1900
+F 0 "#PWR0104" H 4000 1775 50  0001 C CNN
+F 1 "-9V" H 4015 2073 50  0000 C CNN
+F 2 "" H 4000 1900 50  0001 C CNN
+F 3 "" H 4000 1900 50  0001 C CNN
+	1    4000 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1400 1900 2450 1900
+Wire Wire Line
+	3400 1800 3400 1900
+Connection ~ 3400 1900
+Wire Wire Line
+	3400 1900 4000 1900
+Wire Wire Line
+	2900 1800 2900 1900
+Connection ~ 2900 1900
+Wire Wire Line
+	2900 1900 3400 1900
+Wire Wire Line
+	2450 1850 2450 1900
+Connection ~ 2450 1900
+Wire Wire Line
+	2450 1900 2900 1900
+Wire Wire Line
+	2450 1550 2450 1500
+Wire Wire Line
+	2900 1600 2900 1500
+Wire Wire Line
+	3400 1600 3400 1550
+Wire Wire Line
+	2450 1300 2450 1200
+Wire Wire Line
+	2450 1200 2300 1200
+Wire Wire Line
+	1900 1200 1400 1200
+Wire Wire Line
+	2450 1200 2900 1200
+Connection ~ 2450 1200
+Wire Wire Line
+	4000 1550 3400 1550
+Connection ~ 3400 1550
+Wire Wire Line
+	3400 1550 3400 1500
+Wire Wire Line
+	2900 1300 2900 1200
+Connection ~ 2900 1200
+Wire Wire Line
+	2900 1200 3400 1200
+Wire Wire Line
+	3400 1300 3400 1200
+Connection ~ 3400 1200
+Wire Wire Line
+	3400 1200 4000 1200
+$Sheet
+S 3850 2900 900  200 
+U 5C71AB92
+F0 "cmoy_channel" 50
+F1 "cmoy_channel.sch" 50
+F2 "IN" I L 3850 3000 50 
+F3 "OUT" I R 4750 3000 50 
+$EndSheet
+$Sheet
+S 3850 3300 900  200 
+U 5C71BC7F
+F0 "sheet5C71BC7F" 50
+F1 "cmoy_channel.sch" 50
+F2 "IN" I L 3850 3400 50 
+F3 "OUT" I R 4750 3400 50 
+$EndSheet
+$Comp
+L Device:Opamp_Dual_Generic U?
+U 3 1 5C71BFC9
+P 4850 1550
+AR Path="/5C71AB92/5C71BFC9" Ref="U?"  Part="1" 
+AR Path="/5C71BC7F/5C71BFC9" Ref="U?"  Part="2" 
+AR Path="/5C71BFC9" Ref="U101"  Part="3" 
+F 0 "U101" H 4808 1596 50  0000 L CNN
+F 1 "Opamp_Dual_Generic" H 4808 1505 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4850 1550 50  0001 C CNN
+F 3 "~" H 4850 1550 50  0001 C CNN
+	3    4850 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+9V #PWR0105
+U 1 1 5C71C2AB
+P 4750 1200
+F 0 "#PWR0105" H 4750 1050 50  0001 C CNN
+F 1 "+9V" H 4765 1373 50  0000 C CNN
+F 2 "" H 4750 1200 50  0001 C CNN
+F 3 "" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-9V #PWR0106
+U 1 1 5C71C2C8
+P 4750 1900
+F 0 "#PWR0106" H 4750 1775 50  0001 C CNN
+F 1 "-9V" H 4765 2073 50  0000 C CNN
+F 2 "" H 4750 1900 50  0001 C CNN
+F 3 "" H 4750 1900 50  0001 C CNN
+	1    4750 1900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4750 1900 4750 1850
+Wire Wire Line
+	4750 1250 4750 1200
+$Comp
+L Connector:AudioJack3 J101
+U 1 1 5C71D1FC
+P 3300 3250
+F 0 "J101" H 3020 3183 50  0000 R CNN
+F 1 "AudioJack3" H 3020 3274 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 3300 3250 50  0001 C CNN
+F 3 "~" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	1    0    0    1   
+$EndComp
+$Comp
+L Connector:AudioJack3 J102
+U 1 1 5C71D914
+P 5300 3250
+F 0 "J102" H 5020 3183 50  0000 R CNN
+F 1 "AudioJack3" H 5020 3274 50  0000 R CNN
+F 2 "Connector_Audio:Jack_3.5mm_Ledino_KB3SPRS_Horizontal" H 5300 3250 50  0001 C CNN
+F 3 "~" H 5300 3250 50  0001 C CNN
+	1    5300 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:Earth #PWR0101
+U 1 1 5C71E4B4
+P 3500 3400
+F 0 "#PWR0101" H 3500 3150 50  0001 C CNN
+F 1 "Earth" H 3500 3250 50  0001 C CNN
+F 2 "" H 3500 3400 50  0001 C CNN
+F 3 "~" H 3500 3400 50  0001 C CNN
+	1    3500 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0107
+U 1 1 5C71E4D5
+P 5100 3400
+F 0 "#PWR0107" H 5100 3150 50  0001 C CNN
+F 1 "Earth" H 5100 3250 50  0001 C CNN
+F 2 "" H 5100 3400 50  0001 C CNN
+F 3 "~" H 5100 3400 50  0001 C CNN
+	1    5100 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3400 3500 3350
+Wire Wire Line
+	5100 3400 5100 3350
+Wire Wire Line
+	3500 3150 3650 3150
+Wire Wire Line
+	3650 3000 3850 3000
+Wire Wire Line
+	3650 3000 3650 3150
+Wire Wire Line
+	3500 3250 3650 3250
+Wire Wire Line
+	3650 3250 3650 3400
+Wire Wire Line
+	3650 3400 3850 3400
+Wire Wire Line
+	5100 3150 4950 3150
+Wire Wire Line
+	4950 3150 4950 3000
+Wire Wire Line
+	4950 3000 4750 3000
+Wire Wire Line
+	5100 3250 4950 3250
+Wire Wire Line
+	4950 3250 4950 3400
+Wire Wire Line
+	4950 3400 4750 3400
+$Comp
+L Device:Battery_Cell BT102
+U 1 1 5C723A29
+P 1400 1800
+F 0 "BT102" H 1518 1896 50  0000 L CNN
+F 1 "Battery_Cell" H 1518 1805 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1400 1860 50  0001 C CNN
+F 3 "~" V 1400 1860 50  0001 C CNN
+	1    1400 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Battery_Cell BT101
+U 1 1 5C723B07
+P 1400 1400
+F 0 "BT101" H 1518 1496 50  0000 L CNN
+F 1 "Battery_Cell" H 1518 1405 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" V 1400 1460 50  0001 C CNN
+F 3 "~" V 1400 1460 50  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1600 1400 1500
+$EndSCHEMATC
