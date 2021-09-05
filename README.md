@@ -10,6 +10,7 @@ Schematic Capture
 =================
 If you already have a schematic, this part can be quite fast.  
 >You can also do the primary drawing here, SPICE simulation can be a great help here, but you'll have to figure that out with the help of duckduckgo.com.  
+> Alternatively, use the falstad's circuitjs as shown in the first link [here](https://gitlab.com/evils/proto_amp/-/blob/01d0c8602a0f4a9aca43438817fe95e76d190ff2/README.adoc)
 
 Start with familiarizing yourself with hotkeys like ?, R, C, G, X, Y, DEL, etc. many of these are noted in the context menus.  
 If there are any duplicated layouts, start with drawing a hierarchical sheet and naming it appropriately.  
