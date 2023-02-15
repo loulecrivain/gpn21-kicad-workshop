@@ -1,0 +1,20 @@
+= KiCad Workshop Handout
+Evils <evils.devils@protonmail.com>
+:homepage: https://gitlab.com/evils/kicad-workshop
+:license: CERN-OHL-W-2.0
+:keywords: KiCad, workshop, handout, learn, schematic, capture, PCB, printed, circuit, board, layout, design, EDA, suite, DIY, electronics
+:toc2:
+:sectanchors:
+:sectlinks:
+:hardbreaks:
+
+This handout is intended to be used in conjunction with an instructor giving a KiCad workshop.
+It is based on cpresser's MCH2022 handout and should be valid for KiCad version 7.
+This repo contains the source .odt file which embeds the D-DIN font it uses.
+Plus a .pdf and .png render of that.
+And the KiCad source for the example schematic.
+
+image::handout.png[]
+
+== Additional materials
+An older, elaborate workshop outline can be found in the `cmoy` branch here {homepage}.
