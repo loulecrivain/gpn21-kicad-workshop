@@ -7,11 +7,12 @@ Evils <evils.devils@protonmail.com>
 :sectanchors:
 :sectlinks:
 :hardbreaks:
+:hide-uri-scheme:
 
 This handout is intended to be used in conjunction with an instructor giving a KiCad workshop.
 It is based on cpresser's MCH2022 handout and should be valid for KiCad version 7.
 This repo contains the source .odt file which embeds the D-DIN font it uses.
-Plus a .pdf and .png render of that.
+Plus a link:./handout.pdf[.pdf] and link:./handout.png[.png] render of that.
 And the KiCad source for the example schematic.
 
 image::handout.png[]
