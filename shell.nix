@@ -6,5 +6,6 @@ pkgs.mkShell {
     libreoffice
     kicad-small
     inkscape
+    libfaketime
   ];
 }

@@ -11,7 +11,7 @@ handout.pdf: handout.odt schematic.svg
 	libreoffice --headless --convert-to pdf $<
 
 KiCad_handout_schematic.svg: handout_schematic/KiCad_handout_schematic.kicad_sch
-	kicad-cli sch export svg --black-and-white --no-background-color --exclude-drawing-sheet $<
+	faketime -f "1970-01-01 00:00:01" kicad-cli sch export svg --black-and-white --no-background-color --exclude-drawing-sheet $<
 
 schematic.svg: KiCad_handout_schematic.svg
 	inkscape -D $< -o schematic.svg
