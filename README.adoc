@@ -19,3 +19,21 @@ image::handout.png[]
 
 == Additional materials
 An older, elaborate workshop outline can be found in the `cmoy` branch here {homepage}.
+
+notes:
+first place the components in the schematic
+then assign the footprints with the BOM tool (top right corner of toolbar)
+
+use erc (electrical rule check) to verify there's no generator-generator connection (bad !!!)
+
+use shift+space to change from hard angle to no angle in wiring mode
+
+then open pcb design and press F8 to import the schematic to the pcb. you now have to do the routing by hand
+
+move the parts with m, flip to bottom with f, rotate with r, wire with x
+
+DRC -> checklist "exécuter les règles de vérification de pcb"
+
+then file > gerber export > trace and open the .grbj (gerber job) with the integrated kicad gerber viewer
+
+
